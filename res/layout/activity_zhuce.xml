@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="注册页面"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edt_zhuce"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:hint="例如：陈晨" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86 "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edt_shoujihao"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:hint="你的手机号码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edt_zhucemima"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:hint="填写密码" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_zhuce"
+        android:onClick="zhuce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="#45c018"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</LinearLayout>

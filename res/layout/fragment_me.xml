@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/view_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/head" />
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/head"
+                    android:text="软件152"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvmsg"
+                    style="@style/txt_ContextStyle1"
+                    android:layout_below="@+id/tvname"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/head"
+                    android:text="微信号：ruanjian152"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/er" />
+            </RelativeLayout>
+            <!-- ************************************* -->
+
+            <TextView
+                android:id="@+id/w_money"
+                style="@style/TxtTitle"
+                android:onClick="w_money"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_me_money"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="钱包" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/w_collect"
+                style="@style/TxtTitle"
+                android:onClick="w_collect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_me_collect"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="收藏" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/w_photo"
+                style="@style/TxtTitle"
+                android:onClick="w_photo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_me_photo"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="相册" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/w_card"
+                style="@style/TxtTitle"
+                android:onClick="w_card"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_me_card"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="卡包" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/w_small"
+                style="@style/TxtTitle"
+                android:onClick="w_small"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_me_smail"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="表情" />
+
+            <TextView
+                android:id="@+id/w_setting"
+                style="@style/TxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_me_setting"
+                android:drawablePadding="10dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:onClick="setting"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="设置" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

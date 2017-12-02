@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 这个TextView就是显示字母的 -->
+
+    <TextView
+        android:id="@+id/tv_lv_item_tag"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#bdbdbd"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="Z"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/view_lv_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/black2" />
+
+        <LinearLayout
+            android:id="@+id/layout_addfriend"
+            style="@style/MMListItem"
+            android:layout_height="55dp"
+            android:paddingLeft="15dp" >
+
+            <ImageView
+                android:id="@+id/iv_item_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/a_7" />
+
+            <TextView
+                android:id="@+id/tv_lv_item_name"
+                style="@style/MMFontTitleInList"
+                android:layout_marginLeft="13dp"
+                android:singleLine="true"
+                android:text="@string/recommended_friends"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/layout_addfriend"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/black2" />
+    </RelativeLayout>
+
+</LinearLayout>

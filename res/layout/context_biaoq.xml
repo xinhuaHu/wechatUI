@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:background="#22292C"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_biaoq_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="18dp"
+            android:onClick="img_collect_back"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txt_collect_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="8dp"
+            android:text="表情商店"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/img_collect_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/tab_search" />
+
+        <ImageView
+            android:id="@+id/img_collect_add"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/sett" />
+    </LinearLayout>
+    
+</RelativeLayout>

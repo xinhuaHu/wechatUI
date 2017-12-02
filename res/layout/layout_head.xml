@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/layout_addfriend"
+        style="@style/MMListItem"
+        android:layout_height="55dp"
+        android:paddingLeft="15dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_fmessage" />
+
+        <TextView
+            style="@style/MMFontTitleInList"
+            android:layout_marginLeft="13dp"
+            android:singleLine="true"
+            android:text="@string/recommended_friends"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        style="@style/MMListItem"
+        android:layout_height="55dp"
+        android:paddingLeft="15dip" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_chatroom" />
+
+        <TextView
+            style="@style/MMFontTitleInList"
+            android:layout_marginLeft="13dp"
+            android:singleLine="true"
+            android:text="@string/group_chats"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:id="@+id/layout_public"
+        style="@style/MMListItem"
+        android:layout_height="55dp"
+        android:paddingLeft="15dip" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_contactlabel" />
+
+        <TextView
+            style="@style/MMFontTitleInList"
+            android:layout_marginLeft="13dp"
+            android:singleLine="true"
+            android:text="@string/contactlabel"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:id="@+id/layout_public"
+        style="@style/MMListItem"
+        android:layout_height="55dp"
+        android:paddingLeft="15dip" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_servicebrand_contact" />
+
+        <TextView
+            style="@style/MMFontTitleInList"
+            android:layout_marginLeft="13dp"
+            android:singleLine="true"
+            android:text="@string/official_accounts"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>
